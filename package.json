@@ -11,13 +11,14 @@
   "dependencies": {
     "async": "^2.6.1",
     "moving-average": "^1.0.0",
-    "noble-mac": "git+https://github.com/Timeular/noble-mac.git",
-    "sensortag": "^1.3.0",
+    "noble": "git+https://github.com/tomcollins/noble",
+    "noble-mac": "git+https://github.com/Timeular/noble-mac.git#0.0.4",
+    "sensortag": "git+https://github.com/tomcollins/node-sensortag",
     "socket.io": "^2.1.1",
-    "winston": "^3.1.0",
-    "xpc-connection": "github:sandeepmistry/node-xpc-connection#pull/26/head"
+    "winston": "^3.1.0"
   },
   "resolutions": {
-    "xpc-connection": "sandeepmistry/node-xpc-connection#pull/26/head"
+    "sensortag": "git+https://github.com/tomcollins/node-sensortag",
+    "noble": "git+https://github.com/tomcollins/noble"
   }
 }
