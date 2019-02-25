@@ -4,8 +4,8 @@ const MovingAverage = require('moving-average');
 const logger = require('./logger');
 
 
-const accelerometerPeriod = 100;
-const accelerometerPrecision = 10;
+const accelerometerPeriod = 200;
+const accelerometerPrecision = 2;
 const movingAverageTimeInterval = 2000;
 const accelerometerUpdateMinInterval = 100;
 

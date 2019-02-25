@@ -28,7 +28,6 @@ function onDiscover(sensorTag) {
     sensors.push(sensor);
     updateSensors(io);
 
-
     sensor.start();
     sensor.on('accelerometerChange', (x, y, z) => {
       logger.debug('accelerometerChange', x, y, z);
@@ -43,16 +42,6 @@ function onDiscover(sensorTag) {
 }
 
 SensorTag.discoverAll(onDiscover);
-// SensorTag.stopDiscoverAll(onDiscover);
-
-// process.on('SIGINT', () => {
-//     console.log("Intercepting SIGINT");
-// });
-
-// process.on('SIGTERM', () => {
-//     console.log("Intercepting SIGTERM");
-// });
-
 
 io.on('connection', socket => {
   logger.info('Socket client connected');
